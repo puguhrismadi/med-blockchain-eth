@@ -7,30 +7,33 @@ module.exports = {
   contracts_build_directory: "./build",
   migrations_directory: "./migrations",
   networks: {
-    rinkeby: {
-      provider: () =>
-        new HDWalletProvider({
-          privateKeys: [mnemonic],
-          providerOrUrl: "https://rinkeby.infura.io/v3/INFURA_PROJECT_ID",
-          numberOfAddresses: 1,
-        }),
-      network_id: 4,
-      gas: 100000, // Max is 10000000
-      confirmations: 4,
-      timeoutBlocks: 200,
-      skipDryRun: true,
-      networkCheckTimeout: 5000000,
-      // maxFeePerGas: 10,
-      // maxPriorityFeePerGas: 10,
-    },
+    // rinkeby: {
+    //   provider: () =>
+    //     new HDWalletProvider({
+    //       privateKeys: [mnemonic],
+    //       providerOrUrl: "https://rinkeby.infura.io/v3/INFURA_PROJECT_ID",
+    //       numberOfAddresses: 1,
+    //     }),
+    //   network_id: 4,
+    //   gas: 100000, // Max is 10000000
+    //   confirmations: 4,
+    //   timeoutBlocks: 200,
+    //   skipDryRun: true,
+    //   networkCheckTimeout: 5000000,
+    //   // maxFeePerGas: 10,
+    //   // maxPriorityFeePerGas: 10,
+    // },
     development: {
       host: "127.0.0.1",
       port: 9545,
       network_id: "*", // Match any network id
-      gas: 1000000, // Use `gas` & `gasPrice` only if creating type 0 transactions
-      gasPrice: 2000000, // (20 Gwei) All gas values specified in wei
-      maxFeePerGas: 10, // Use only if creating type 2 transactions
-      maxPriorityFeePerGas: 10, // Use only if creating type 2 transactions
+      blockLimit:669999999, 
+      network_id: "*", // Match any network id
+      gas: 6699218, // Use `gas` & `gasPrice` only if creating type 0 transactions
+      gasPrice: 6699218, // (20 Gwei) All gas values specified in wei
+      baseFeePerGas:6699218,
+      maxFeePerGas: 586181641, // Use only if creating type 2 transactions
+      maxPriorityFeePerGas: 6699218, // Use only if creating type 2 transactions
       // from: "", // From which we account we have to deploy
       // websockets: true,
       // skipDryRun: false,

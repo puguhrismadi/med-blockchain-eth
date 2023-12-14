@@ -1,5 +1,5 @@
 export const BASE_URL = "http://localhost:9545";
-export const CONTRACT_ADDRESS = "0x343eB4bcC8344819fab52Fa86bBBAC3F7f9b4Eb5";
-// export const ACCOUNT_ADDRESS = "0xc3FEbF701603d7Eb0Da4D53662919B87caD3f84D";
+export const CONTRACT_ADDRESS = "0x603AfD265f941497699Bf4D5dC97C97f6D1A51fB";
+// export const ACCOUNT_ADDRESS = "From Migrate Deploy from truffle local eth";
 
 export const GAS_FEE = 3000000;

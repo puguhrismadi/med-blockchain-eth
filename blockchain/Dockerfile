@@ -1,5 +1,5 @@
 # Gunakan nodejs versi 20.10
-FROM node:20.10
+FROM node:16
 
 # Tentukan direktori kerja
 WORKDIR /app
@@ -21,6 +21,4 @@ CMD ["truffle", "develop"]
 
 # Expose port 9545 untuk Truffle develop
 EXPOSE 9545
-EXPOSE 24012
-
 
