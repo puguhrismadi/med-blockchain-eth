@@ -1,4 +1,4 @@
-# Gunakan nodejs versi 20.10
+# Gunakan nodejs versi 16
 FROM node:16
 
 # Tentukan direktori kerja
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install Truffle lts secara global
-RUN npm install -g truffle@latest
+RUN npm install -g truffle@5.5
 RUN npm install @truffle/hdwallet-provider
 
 # Compile smart contracts menggunakan Truffle
